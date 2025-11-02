@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0"><widget class="QLineEdit" name="editIncome"><property name="placeholderText"><string>Avg Area Income</string></property></widget></item>
+   <item row="1" column="0"><widget class="QLineEdit" name="editAge"><property name="placeholderText"><string>Avg Area House Age</string></property></widget></item>
+   <item row="2" column="0"><widget class="QLineEdit" name="editRooms"><property name="placeholderText"><string>Avg Area Number of Rooms</string></property></widget></item>
+   <item row="3" column="0"><widget class="QLineEdit" name="editBeds"><property name="placeholderText"><string>Avg Area Number of Bedrooms</string></property></widget></item>
+   <item row="4" column="0"><widget class="QLineEdit" name="editPop"><property name="placeholderText"><string>Area Population</string></property></widget></item>
+   <item row="5" column="0"><widget class="QHBoxLayout" name="buttonLayout">
+     <item><widget class="QPushButton" name="btnPredict"><property name="text"><string>Predict</string></property></widget></item>
+     <item><widget class="QPushButton" name="btnReload"><property name="text"><string>Reload Model</string></property></widget></item>
+   </widget></item>
+   <item row="6" column="0"><widget class="QLabel" name="lblResult"><property name="text"><string>Prediction: ...</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

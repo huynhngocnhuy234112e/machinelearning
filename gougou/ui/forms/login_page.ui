@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginPage</class>
+ <widget class="QWidget" name="LoginPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Credit Risk Management System - Login</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="leftMargin">
+    <number>40</number>
+   </property>
+   <property name="topMargin">
+    <number>60</number>
+   </property>
+   <property name="rightMargin">
+    <number>40</number>
+   </property>
+   <property name="bottomMargin">
+    <number>60</number>
+   </property>
+   <property name="spacing">
+    <number>20</number>
+   </property>
+   <!-- Title Section -->
+   <item>
+    <widget class="QLabel" name="titleLabel">
+     <property name="text">
+      <string>Credit Risk Management System</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>24</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </item>
+   <!-- Subtitle -->
+   <item>
+    <widget class="QLabel" name="subtitleLabel">
+     <property name="text">
+      <string>Login to your account</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="objectName">
+      <string>lblSecondary</string>
+     </property>
+    </widget>
+   </item>
+   <!-- Spacing -->
+   <item>
+    <spacer name="topSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <!-- Center Layout for Form -->
+   <item>
+    <layout class="QHBoxLayout" name="centerLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <!-- Left Stretch -->
+     <item>
+      <spacer name="leftSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <!-- Form Group -->
+     <item>
+      <widget class="QGroupBox" name="formGroup">
+       <property name="minimumWidth">
+        <number>400</number>
+       </property>
+       <property name="maximumWidth">
+        <number>500</number>
+       </property>
+       <property name="title">
+        <string></string>
+       </property>
+       <layout class="QVBoxLayout" name="formLayout">
+        <property name="spacing">
+         <number>16</number>
+        </property>
+        <!-- Username Label -->
+        <item>
+         <widget class="QLabel" name="usernameLabel">
+          <property name="text">
+           <string>Username</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <!-- Username Input -->
+        <item>
+         <widget class="QLineEdit" name="usernameInput">
+          <property name="minimumHeight">
+           <number>40</number>
+          </property>
+          <property name="placeholderText">
+           <string>Enter your username</string>
+          </property>
+         </widget>
+        </item>
+        <!-- Password Label -->
+        <item>
+         <widget class="QLabel" name="passwordLabel">
+          <property name="text">
+           <string>Password</string>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>11</pointsize>
+            <weight>50</weight>
+           </font>
+          </property>
+         </widget>
+        </item>
+        <!-- Password Input -->
+        <item>
+         <widget class="QLineEdit" name="passwordInput">
+          <property name="minimumHeight">
+           <number>40</number>
+          </property>
+          <property name="placeholderText">
+           <string>Enter your password</string>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
+        </item>
+        <!-- Spacing -->
+        <item>
+         <spacer name="formSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <!-- Button Layout -->
+        <item>
+         <layout class="QHBoxLayout" name="buttonLayout">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <!-- Login Button -->
+          <item>
+           <widget class="QPushButton" name="loginButton">
+            <property name="minimumHeight">
+             <number>40</number>
+            </property>
+            <property name="text">
+             <string>Login</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <!-- Admin Login Button -->
+          <item>
+           <widget class="QPushButton" name="adminLoginButton">
+            <property name="minimumHeight">
+             <number>40</number>
+            </property>
+            <property name="text">
+             <string>Login as Admin</string>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+              <weight>50</weight>
+             </font>
+            </property>
+            <property name="objectName">
+             <string>btnSecondary</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <!-- Message Label -->
+        <item>
+         <widget class="QLabel" name="messageLabel">
+          <property name="text">
+           <string></string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="objectName">
+           <string>lblSecondary</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <!-- Right Stretch -->
+     <item>
+      <spacer name="rightSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <!-- Bottom Stretch -->
+   <item>
+    <spacer name="bottomSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserPortal</class>
+ <widget class="QWidget" name="UserPortal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>703</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>User Portal</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_root">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>679</width>
+        <height>652</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_body">
+       <item>
+        <widget class="QGroupBox" name="grpAuth">
+         <property name="title">
+          <string>A) Log in / Register</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_auth">
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelUser">
+            <property name="text">
+             <string>Username</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="edUser"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btnLogin">
+            <property name="text">
+             <string>Log in</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="labelPass">
+            <property name="text">
+             <string>Password</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="edPass">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btnReg">
+            <property name="text">
+             <string>Register</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="labelPass2">
+            <property name="text">
+             <string>Confirm (for register)</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="edPass2">
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="3">
+           <widget class="QLabel" name="lblAuthMsg">
+            <property name="text">
+             <string>—</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="grpBilling">
+         <property name="title">
+          <string>B) Billing &amp; Payments</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_billing">
+          <item>
+           <layout class="QHBoxLayout" name="hLayout_kpis">
+            <item>
+             <widget class="QGroupBox" name="kDueBox">
+              <property name="title">
+               <string>Amount due</string>
+              </property>
+              <layout class="QVBoxLayout" name="v_kDue">
+               <item>
+                <widget class="QLabel" name="kDueVal">
+                 <property name="text">
+                  <string>N/A</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="kDueSub">
+                 <property name="text">
+                  <string>—</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="kOverBox">
+              <property name="title">
+               <string>Overdue</string>
+              </property>
+              <layout class="QVBoxLayout" name="v_kOver">
+               <item>
+                <widget class="QLabel" name="kOverVal">
+                 <property name="text">
+                  <string>N/A</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="kOverSub">
+                 <property name="text">
+                  <string>—</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="kNextBox">
+              <property name="title">
+               <string>Next due date</string>
+              </property>
+              <layout class="QVBoxLayout" name="v_kNext">
+               <item>
+                <widget class="QLabel" name="kNextVal">
+                 <property name="text">
+                  <string>N/A</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="kNextSub">
+                 <property name="text">
+                  <string>—</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="hLayout_filter">
+            <item>
+             <widget class="QLabel" name="lblFilter">
+              <property name="text">
+               <string>Filter status:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="cmbStatus"/>
+            </item>
+            <item>
+             <spacer name="hSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnRefresh">
+              <property name="text">
+               <string>Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnMarkPaid">
+              <property name="text">
+               <string>Mark selected as PAID</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableView" name="tblBills"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="hLayout_pay">
+            <item>
+             <widget class="QLineEdit" name="edCard">
+              <property name="placeholderText">
+               <string>Card number (demo)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="edCVV">
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
+              </property>
+              <property name="placeholderText">
+               <string>CVV</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnPay">
+              <property name="text">
+               <string>Pay selected invoice</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="grpAccount">
+         <property name="title">
+          <string>C) Account</string>
+         </property>
+         <layout class="QHBoxLayout" name="hLayout_account">
+          <item>
+           <widget class="QLabel" name="lblWelcome">
+            <property name="text">
+             <string>—</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="hSpacer2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLogout">
+            <property name="text">
+             <string>Log out</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

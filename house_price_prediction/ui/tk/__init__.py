@@ -1,0 +1,1 @@
+"""Tkinter GUI for house price prediction."""
